@@ -90,11 +90,14 @@ group :development, :test do
   gem 'rb-fsevent', require: false
   gem 'rb-fchange', require: false
   gem 'ruby_gntp'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
   gem 'foreman'
   gem 'letter_opener'
   gem 'pry-rails'
   gem 'rails_spec_harness', require: false
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'  
 end
